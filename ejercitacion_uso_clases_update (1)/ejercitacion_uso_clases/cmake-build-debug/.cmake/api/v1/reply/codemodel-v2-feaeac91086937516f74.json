@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "uso_clases",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gtest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gtest-Debug-e36acb4c05428d9ddae8.json",
+					"name" : "gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gtest_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gtest_main-Debug-14b00349c768ddb7d474.json",
+					"name" : "gtest_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests_algobot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests_algobot-Debug-9ae8386b71514c5d26d8.json",
+					"name" : "tests_algobot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests_ejercitacion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests_ejercitacion-Debug-631e4a6199d1fccac184.json",
+					"name" : "tests_ejercitacion",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug",
+		"source" : "/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

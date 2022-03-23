@@ -1,0 +1,6 @@
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/gtest.dir
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/tests_ejercitacion.dir
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/tests_algobot.dir
+/home/clinux01/Documentos/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/cmake-build-debug/CMakeFiles/gtest_main.dir
