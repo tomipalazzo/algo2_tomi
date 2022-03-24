@@ -8,8 +8,15 @@ using namespace std;
 
 bool pertenece(int n, vector<int> s){
     int i;
-    for (i=0, i<s.size() && s[i]!=n , i++){
+    for (i=0; i<s.size() && s[i]!=n ; i++){
+    }
+    return i<s.size();
 
+}
+
+bool pertenece_char(char n, vector<char> s){
+    int i;
+    for (i=0; i<s.size() && s[i]!=n ; i++){
     }
     return i<s.size();
 
@@ -18,55 +25,134 @@ bool pertenece(int n, vector<int> s){
 vector<int> quitar_repetidos(vector<int> s) {
     vector<int> res;
 
-    for (int i=0,  i<s.size(), i++){
-        if(pertenece(s[i], res)){
-            
+    for (int i=0; i<s.size(); i++){
+        if(! pertenece(s[i], res)){
+            res.push_back(s[i]);
         }
-
     }
 
 
-    return vector<int>();
+    return res;
+
 }
 
 // Ejercicio 2
 vector<int> quitar_repetidos_v2(vector<int> s) {
-    return vector<int>();
+    vector<int> res;
+    set<int> conjunto;
+    for (int i=0; i<s.size();i++){
+        conjunto.insert(s[i]);
+    }
+    for (int i:conjunto){
+        res.push_back(i);
+    }
+    return res;
 }
 
 // Ejercicio 3
 bool mismos_elementos(vector<int> a, vector<int> b) {
-    return true;
+    set<int> conjunto_a;
+    set<int> conjunto_b;
+    for (int i=0; i<a.size();i++) {
+        conjunto_a.insert(a[i]);
+    }
+
+    for (int i=0; i<b.size();i++) {
+        conjunto_b.insert(b[i]);
+    }
+
+
+
+    return conjunto_a == conjunto_b;
 }
 
 // Ejercicio 4
 bool mismos_elementos_v2(vector<int> a, vector<int> b) {
-    return true;
+    set<int> conjunto_a;
+    set<int> conjunto_b;
+    for (int i=0; i<a.size();i++) {
+        conjunto_a.insert(a[i]);
+    }
+
+    for (int i=0; i<b.size();i++) {
+        conjunto_b.insert(b[i]);
+    }
+
+
+
+    return conjunto_a == conjunto_b;
 }
 
 // Ejercicio 5
 map<int, int> contar_apariciones(vector<int> s) {
-    return map<int, int>();
+    map<int, int> res;
+    vector<int> val_unicos;
+    val_unicos = quitar_repetidos_v2(s);
+    for (int i = 0; i < val_unicos.size(); ++i) {
+        res[val_unicos[i]] = 0;
+    }
+
+    for (int i=0; i<s.size();i++){
+         res[s[i]]++;
+    }
+    return res;
 }
 
 // Ejercicio 6
 vector<int> filtrar_repetidos(vector<int> s) {
-    return vector<int>();
+    vector<int> res;
+    map<int,int> dic = contar_apariciones(s);
+    for (int i = 0; i < s.size(); ++i) {
+        if(dic[s[i]] == 1){
+            res.push_back(s[i]);
+        }
+    }
+    return res;
 }
 
 // Ejercicio 7
 set<int> interseccion(set<int> a, set<int> b) {
-    return set<int>();
+    set<int> res;
+    for (int i:a) {
+        if (b.count(i)==1){
+            res.insert(i);
+        }
+    }
+    return res;
 }
 
 // Ejercicio 8
 map<int, set<int>> agrupar_por_unidades(vector<int> s) {
-    return map<int, set<int>>();
+    map<int,set<int>> res;
+    set<int> empty;
+
+    for (int i = 0; i < s.size(); ++i) {
+        int last_dig = s[i]%10;
+        if (res.count(last_dig) ==1){
+            res[last_dig].insert(s[i]);
+        } else{
+            res[last_dig].insert(s[i]);
+        }
+    }
+
+
+
+    return res;
 }
 
 // Ejercicio 9
 vector<char> traducir(vector<pair<char, char>> tr, vector<char> str) {
-    return vector<char>();
+    vector<char> res;
+    for (int i = 0; i < str.size(); i++) {
+        int j;
+        for (j=0; j < tr.size() && str[i]!= tr[j].first; j++);
+        if (j<tr.size()){
+            res.push_back(tr[j].second);
+        }else{
+            res.push_back(str[i]);
+        }
+    }
+    return res;
 }
 
 // Ejercicio 10
