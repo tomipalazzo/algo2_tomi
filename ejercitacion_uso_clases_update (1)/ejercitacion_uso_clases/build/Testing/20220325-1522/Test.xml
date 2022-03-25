@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20220325-1522-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.16.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="tomi-ThinkPad-E580"
+	OSRelease="5.13.0-37-generic"
+	OSVersion="#42~20.04.1-Ubuntu SMP Tue Mar 15 15:44:28 UTC 2022"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15764"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2000"
+	>
+	<Testing>
+		<StartDateTime>Mar 25 12:22 -03</StartDateTime>
+		<StartTestTime>1648221766</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 25 12:22 -03</EndDateTime>
+		<EndTestTime>1648221766</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

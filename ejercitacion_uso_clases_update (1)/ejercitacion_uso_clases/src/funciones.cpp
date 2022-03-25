@@ -156,11 +156,69 @@ vector<char> traducir(vector<pair<char, char>> tr, vector<char> str) {
 }
 
 // Ejercicio 10
+/*bool integrantes_repetidos(vector<Mail> s) {
+    bool res = false;
+    for (int i = 0; i < s.size(); i++)
+    {
+        for (int j = 0; i < s.size(); j++)
+        {
+            if (interseccion(s[i].libretas(), s[j].libretas()).size()==1){
+                res=true;
+            }
+        }
+        
+    }
+    
+
+
+    return res;
+}
+*/
+
+set<LU> interseccion_LU(set<LU> a, set<LU> b) {
+    set<LU> res;
+    for (LU i:a) {
+        if (b.count(i)==1){
+            res.insert(i);
+        }
+    }
+    return res;
+}
 bool integrantes_repetidos(vector<Mail> s) {
-    return true;
+    bool res = false;
+    for (Mail mail1:s)
+    {
+        set<LU> integrantesMail1 = mail1.libretas();
+
+        for(Mail mail2:s){
+            set<LU> integrantesMail2 = mail2.libretas();
+        if(!mail1.operator==(mail2) && !interseccion_LU(integrantesMail1, integrantesMail2).empty()){
+            res=true;
+        }
+
+        }
+    }
+    
+
+
+    return res;
 }
 
 // Ejercicio 11
 map<set<LU>, Mail> entregas_finales(vector<Mail> s) {
-  return map<set<LU>, Mail>();
+    map<set<LU>,Mail> res;
+
+    for (Mail mail:s)
+    {
+        set<LU> libretas = mail.libretas();
+        if (res.count(libretas)!=1){
+            res[libretas] = mail;
+        }
+    }
+    
+
+
+
+
+  return res;
 }

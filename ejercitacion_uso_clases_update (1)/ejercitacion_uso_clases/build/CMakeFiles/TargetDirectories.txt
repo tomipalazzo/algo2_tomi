@@ -1,0 +1,6 @@
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/rebuild_cache.dir
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/edit_cache.dir
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/gtest_main.dir
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/gtest.dir
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/tests_ejercitacion.dir
+/home/tomi/Tomi/algo2_tomi/ejercitacion_uso_clases_update (1)/ejercitacion_uso_clases/build/CMakeFiles/tests_algobot.dir
