@@ -138,9 +138,9 @@ Horario Recordatorio::horario() {
     return horario_;
 }
 
-//ostream& operator<<(ostream& os, Recordatorio r){
-//    os <<
-//}
+ostream& operator<<(ostream& os, Recordatorio r){
+    os << r.mensaje() << " @ " << r.fecha() << " " <<r.horario();
+}
 
 // Ejercicio 14
 
