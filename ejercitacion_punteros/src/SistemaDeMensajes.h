@@ -1,6 +1,7 @@
 #ifndef SISTEMADEMENSAJES_H
 #define SISTEMADEMENSAJES_H
-
+#include "Proxy2.h"
+#include "vector"
 #include "ConexionJugador.h"
 #include <string>
 
@@ -26,8 +27,15 @@ class SistemaDeMensajes {
     // Pre: registrado(id)
     string ipJugador(int id) const;
 
-  private:
+    ~SistemaDeMensajes();
+
+    void desregistrarJugador(int);
+
+    Proxy* obtenerProxy(int id);
+
+    private:
     ConexionJugador* _conns[4];
+    vector<Proxy*> punteros_proxy_;
 };
 
 #endif
