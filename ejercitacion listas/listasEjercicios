@@ -1,0 +1,96 @@
+#include "Lista.h"
+
+Lista::Lista() {
+    head_ = nullptr;
+    last_ = nullptr;
+    len_  = 0;
+    // Completar
+}
+
+Lista::Lista(const Lista& l) : Lista() {
+    //Inicializa una lista vacía y luego utiliza operator= para no duplicar el código de la copia de una lista.
+    *this = l;
+}
+
+Lista::~Lista() {
+    // Completar
+    Nodo* temp = head_;
+    while (temp != nullptr){
+        temp = temp->siguiente;
+        delete head_;
+        head_=temp;
+    }
+}
+
+Lista& Lista::operator=(const Lista& aCopiar) {
+    // Completar
+    return *this;
+}
+
+void Lista::agregarAdelante(const int& elem) {
+    Nodo* agregarAd = new Nodo;
+    agregarAd->valor = elem;
+    agregarAd->siguiente = head_;
+    agregarAd->anterior = nullptr;
+    head_ = agregarAd;
+
+    if (last_ == nullptr){
+        last_ = agregarAd;
+    }
+    len_++;
+}
+
+void Lista::agregarAtras(const int& elem) {
+
+    Nodo* agregarAt = new Nodo;
+    agregarAt->valor = elem;
+    agregarAt->siguiente = nullptr;
+    agregarAt->anterior = last_;
+    agregarAt->anterior->siguiente = agregarAt;
+    last_ = agregarAt;
+
+    if (head_ == nullptr){
+        head_ = agregarAt;
+    }
+    len_++;
+}
+
+void Lista::eliminar(Nat i) {
+
+
+    Nodo* temp = head_;
+    for (int j = 0; j < i; ++j) {
+        temp = temp->siguiente;
+    }
+    if(temp != head_){
+    temp->anterior->siguiente = temp->siguiente;} else{
+        head_ = temp->siguiente;
+    }
+    if (temp!= last_){
+    temp->siguiente->anterior = temp->anterior;} else{
+        last_ = temp->anterior;
+    }
+
+    delete temp;
+    temp = nullptr;
+
+    len_--;
+}
+
+int Lista::longitud() const {
+
+    return len_;
+}
+
+
+
+const int& Lista::iesimo(Nat i) const {
+    // Completar
+    assert(false);
+}
+
+int& Lista::iesimo(Nat i) {
+    Nodo* temp = head_;
+    for (int j = 0; j < i; ++j) {
+        temp = temp->siguiente;
+    }
