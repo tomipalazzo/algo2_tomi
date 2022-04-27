@@ -1,0 +1,141 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "algo2_labo_clase5",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ej1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej1-Debug-c5b0d1f5ba346eabe04c.json",
+					"name" : "ej1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej2-Debug-90d1a627e46b83783273.json",
+					"name" : "ej2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej3-Debug-1e261245dba574de1de1.json",
+					"name" : "ej3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej4-Debug-dcb6c342b15dfbfd0bf0.json",
+					"name" : "ej4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej5-Debug-03aeca5e1be291173e73.json",
+					"name" : "ej5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej6-Debug-be329f30c3f4aa345898.json",
+					"name" : "ej6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej7-Debug-7212bd7e792435bbef29.json",
+					"name" : "ej7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej8-Debug-728d6071ec087e8e3776.json",
+					"name" : "ej8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gtest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gtest-Debug-5754e8cdf5b5f47aace5.json",
+					"name" : "gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gtest_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gtest_main-Debug-4f74a05c3300953c22dc.json",
+					"name" : "gtest_main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/clinux01/Documentos/tomiAlgo2/algo2_tomi/ejercitacion_iteradores_5/ejercitacion_iteradores_5/cmake-build-debug",
+		"source" : "/home/clinux01/Documentos/tomiAlgo2/algo2_tomi/ejercitacion_iteradores_5/ejercitacion_iteradores_5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
