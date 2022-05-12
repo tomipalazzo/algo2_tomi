@@ -70,12 +70,21 @@ const T& Conjunto<T>::siguiente(const T& clave) {
 
 template <class T>
 const T& Conjunto<T>::minimo() const {
-    assert(false);
+    Nodo* actual = this;
+    while (actual->izq != NULL){
+        actual = actual->izq;
+    }
+    return actual->valor;
 }
+
 
 template <class T>
 const T& Conjunto<T>::maximo() const {
-    assert(false);
+    Nodo* actual = this;
+    while (actual->der != NULL){
+        actual = actual->der;
+    }
+    return actual->valor;
 }
 
 template <class T>
