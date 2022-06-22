@@ -1,0 +1,7 @@
+In file included from ./Conjunto.h:68:0,
+                 from ../../../../../../taller3/conjunto-tests.cpp:2:
+./Conjunto.hpp: In instantiation of ‘void Conjunto<T>::remover(const T&) [with T = int]’:
+../../../../../../taller3/conjunto-tests.cpp:56:16:   required from here
+./Conjunto.hpp:99:37: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+             if (actual->der == NULL && actual->izq != NULL ||
+                                     ^

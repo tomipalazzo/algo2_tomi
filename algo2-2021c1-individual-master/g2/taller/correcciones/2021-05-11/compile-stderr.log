@@ -1,0 +1,50 @@
+In file included from ../../../../../../taller2/lista_tests.cpp:2:0:
+./Lista.h: In constructor ‘Lista::Nodo::Nodo(const int&)’:
+./Lista.h:94:15: warning: ‘Lista::Nodo::next_’ will be initialized after [-Wreorder]
+         Nodo* next_;
+               ^~~~~
+./Lista.h:92:13: warning:   ‘int Lista::Nodo::val_’ [-Wreorder]
+         int val_;
+             ^~~~
+In file included from ./Lista.h:104:0,
+                 from ../../../../../../taller2/lista_tests.cpp:2:
+./Lista.hpp:3:1: warning:   when initialized here [-Wreorder]
+ Lista::Nodo::Nodo(const int &elem) : prev_(nullptr), next_(nullptr), val_(elem) {};
+ ^~~~~
+./Lista.hpp: In member function ‘Lista& Lista::operator=(const Lista&)’:
+./Lista.hpp:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../../../../../../taller2/gtest-1.8.1/gtest.h:10140:0,
+                 from ../../../../../../taller2/lista_tests.cpp:1:
+./Lista.hpp: In member function ‘void Lista::eliminar(Nat)’:
+./Lista.hpp:82:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     assert(i < tam_ && tam_ != 0);
+            ~~^~~
+In file included from ./Lista.h:104:0,
+                 from ../../../../../../taller2/lista_tests.cpp:2:
+./Lista.hpp:88:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (pos == i) {                 //encuentro la posicion
+             ~~~~^~~~
+In file included from ../../../../../../taller2/gtest-1.8.1/gtest.h:10140:0,
+                 from ../../../../../../taller2/lista_tests.cpp:1:
+./Lista.hpp: In member function ‘const int& Lista::iesimo(Nat) const’:
+./Lista.hpp:118:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     assert(i < tam_ && tam_!=0);
+            ~~^~~
+In file included from ./Lista.h:104:0,
+                 from ../../../../../../taller2/lista_tests.cpp:2:
+./Lista.hpp:123:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(pos == i){
+            ~~~~^~~~
+In file included from ../../../../../../taller2/gtest-1.8.1/gtest.h:10140:0,
+                 from ../../../../../../taller2/lista_tests.cpp:1:
+./Lista.hpp: In member function ‘int& Lista::iesimo(Nat)’:
+./Lista.hpp:134:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     assert(i < tam_ && tam_!=0);
+            ~~^~~
+In file included from ./Lista.h:104:0,
+                 from ../../../../../../taller2/lista_tests.cpp:2:
+./Lista.hpp:139:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(pos == i){
+            ~~~~^~~~
